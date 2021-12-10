@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#first
+{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.container video
+{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     opacity: 0.8;
+     z-index: -100;
+}
+.container .overlay
+{
+    position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(39, 39, 39, 0.856);
+     z-index: -10;
+}
+.text
+{
+   position: relative;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+.text img
+{
+    width: 300px;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 100;
+    }
+    60%{
+        opacity: 100;
+    }
+    80%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.img-text
+{
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background-color: rgb(235, 235, 235);
+    color: #262626;
+    border-radius: 15px;
+}
+.img text h2
+{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.img-text p
+{
+    font-size: 14px;
+}
+.single-box
+{
+    position: relative;
+    margin-bottom: 30px;
+}
+.img-area
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #262626;
+    overflow: hidden;
+    top: 25px;
+    left: 155px;
+    border-radius: 50%;
+}
+.img-area img
+{
+    width: 100%;
+}
+#second
+{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+}
+#second .container p
+{
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding-top: 60px;
+}
+#third
+{
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#third h1
+{
+  padding-top: 15px;
+  color: white;
+  animation: animate 4s linear infinite;
+}
+#fourth
+{
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+}
